@@ -1,0 +1,46 @@
+//by the book of en.wikipedia.org/wiki/Bubble_sort  //
+function  bubbleSort(array) {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let last = 0; j < array.length - 1 - i; last++){
+      if (array[last] > array[last+1]) {
+      const temp = array[i];
+      array[last] = array[last+1];
+      array[last+1] = temp;
+      }
+    }
+  }
+  return array; 
+} 
+
+function crutches(stringToInt) {
+  var inputString = promt("");
+  var stringToInt = Number(inputLength);
+  return stringToInt;
+}
+
+function inputLength(length) {
+//  var lengh = window.parseInt("Put the numbers of numbers to put"); //
+    var getLength = crutches("Put the numbers of numbers to put");
+    var arrayLength = [getLength];
+    console.log(arrayLength);
+ return length;
+}
+
+var inputLength = promt("Put the numbers of numbers to put");
+var getLength = Number(inputLength);
+var arrayLength = [getLength];
+console.log(arrayLength);
+
+function inputNumbers(int) {
+  for (let counterBack = arrayLength; 
+       let index = 0; index < arrayLength; counterBack--;) {
+  arrayLenghth.index = crutches("put " + arrayLength + " in order")
+  console.log(arrayLenghth.index + "Next");
+  index++;
+  }
+ var allArray = arrayLength;
+ console.log("redy to be sorted" + allArray);
+ return allArray;
+ }
+ 
+console.log(bubbleSort(allArray));
