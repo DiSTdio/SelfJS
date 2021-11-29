@@ -1,0 +1,39 @@
+let count = 0;
+
+function BlackJackCountinFunction(card) {
+  // not sure if it would work in real life but ...
+  switch (card)
+  {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count +=1;
+    case 7:
+    case 8:
+    case 9:
+      count +=0;
+      break;a
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count -=1;
+      break;
+  }
+  var call = "";
+
+  if (count > 0) {
+    call = "Bet";
+  } else {
+    call = "Hold";
+  }
+  
+  return (count.toString() + " " + call);
+  // i've tried to create BlackJackCountinFunction
+}
+
+BlackJackCountinFunction(2); 
+//try it on your own etc. with (3); (7); ('K'); ('A');
