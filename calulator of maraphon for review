@@ -1,0 +1,49 @@
+/* calulator of maraphon for review */
+/*Немного практики
+Создайте простой калькулятор Calc, который будет принимать значение a и значение b, а так же идентификатор нужного действия.
+Пример вызова такой функции
+Calc(‘sum’, 1, 2) - возвращает 3
+Calc(‘multi’, 1, 2) - возвращает 2
+И так далее, со всеми математическими действиями, которые вы изучили ранее
+Но и это еще не все.
+Ваш калькулятор должен возвращать сообщение “Error” в том случае если вы не указали все 3 параметра или если вычисляемые значения оказались не числами.
+В случае с неверным “идентификатором нужного действия” возвращайте “unknown operation” */
+
+const warning = "pls w8 4 @NSWR ->"
+
+
+function Calc( arg, num1, num2) {
+    if (typeof arg !== "undefined" && typeof num1 === "number" && typeof num2 === "number") {
+        switch(arg) {
+            case 'sum':  // if (x === 'value1')
+                return (`${warning}  ${num1 + $num2}`);
+                          
+            case 'dif':  // if (x === 'value2')
+                return (`${warning} ${num1 - num2}`);
+                
+            case 'multi':  // if (x === 'value3')
+                return (`${warning} ${num1 * num2}`);
+                
+            case 'degr':  // if (x === 'value4')
+                return (`${warning} ${num1 ** num2}`);
+                
+            case 'mod':  // if (x === 'value5')
+                return (`${warning} ${num1 % num2}`);
+                
+            case 'rootOf':  // if (x === 'value6')
+                return (`${warning} ${num1 ** (1/num2)}`);
+                
+            default:
+                return"unknown operation";
+        }         
+    }
+    return "Error";
+}
+
+console.log(Calc("multi", 2, 3))
+console.log(Calc("mod", 4, 2))
+console.log(Calc("mod", 4))
+console.log(Calc("mod", 4, "sl*t"))
+console.log(Calc("sl*t", 4, 2))
+console.log(Calc(4, 2, "/"))
+console.log(Calc("fk", 4, 2))
